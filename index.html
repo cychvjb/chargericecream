@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منوی کافه شارژر</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @font-face {
+            font-family: 'Vazir';
+            src: url('https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.0.0/fonts/Vazirmatn-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+        body {
+            font-family: 'Vazir', sans-serif;
+            background: linear-gradient(to bottom right, #f8e1ff, #e1f5ff);
+            color: #1a1a1a;
+        }
+        .text-charger-pink {
+            color: #ff007f;
+        }
+        .text-charger-blue {
+            color: #00ffff;
+        }
+        .bg-charger-pink {
+            background-color: #ff007f;
+        }
+        .bg-charger-blue {
+            background-color: #00ffff;
+        }
+        .shadow-charger {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .border-charger-pink {
+            border-color: #ff007f;
+        }
+        .border-charger-blue {
+            border-color: #00ffff;
+        }
+        .backdrop-filter-blur {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+        .item-card-pink {
+            background-color: #fff0f5;
+            border-color: #ff007f;
+        }
+        .item-card-blue {
+            background-color: #f0f8ff;
+            border-color: #00ffff;
+        }
+        .hidden {
+            display: none;
+        }
+        .responsive-grid {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-8">
+
+    <!-- Header with logo and name -->
+    <header class="flex flex-col items-center justify-center text-center p-6 sm:p-10 mb-8 rounded-b-3xl shadow-lg" style="background: linear-gradient(to bottom, #d1faff, #ffc7e6);">
+        <img src="Asset (2).png" alt="لوگوی کافه شارژر" class="w-24 h-24 sm:w-32 sm:h-32 rounded-full mb-4 shadow-charger">
+        <h1 class="text-4xl sm:text-6xl font-bold text-gray-800 mb-2">کافه شارژر</h1>
+        <p class="text-xl sm:text-2xl text-gray-600">انرژی روزتو اینجا شارژ کن!</p>
+    </header>
+
+    <main class="container mx-auto">
+        <!-- Ice Cream & Shakes Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 p-4 rounded-3xl backdrop-filter-blur text-charger-pink">بستنی و شیک</h2>
+            <div class="grid responsive-grid gap-6">
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">بستنی سلف سرویس</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4"> ۳۰+۴۰-۵۰</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">کوکی بستنی</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۵۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیک اورئو</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۱۴۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیک نوتلا</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۱۵۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیک توت فرنگی</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۱۴۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coffees Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 p-4 rounded-3xl backdrop-filter-blur text-charger-blue">نوشیدنی گرم</h2>
+            <div class="grid responsive-grid gap-6">
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">افوگاتو</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۸۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">کاپوچینو</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۶۰-۷۰ هزار تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">هات چاکلت</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۶۰-۷۰ هزار تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">چای</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۳۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">چای ماسالا</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۶۰-۷۰ هزار تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">دمنوش</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۴۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">لاته</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۷۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">ایس موکا</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۸۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">اسپرسو</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۴۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">امریکانو</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۵۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">موکا</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۸۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">کارامل ماکیاتو</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۸۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Juices & Smoothies Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 p-4 rounded-3xl backdrop-filter-blur text-charger-pink">آبمیوه و اسموتی</h2>
+            <div class="grid responsive-grid gap-6">
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">آب هویج</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۴۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">آب هویج بستنی</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۶۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">آب طالبی</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۷۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">آب هندوانه</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۴۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">آب طالبی بستنی</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۸۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">موهیتو</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۸۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">آب آلو جنگلی زرشک</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۶۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیر نارگیل</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۷۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیرموز نارگیل</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۸۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیرموز</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۶۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیر انبه</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۹۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیرموز انبه</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۱۱۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیر خرما</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۶۵,۰۰۰ تومان</p>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-pink border-charger-pink transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">شیرموز خرما</h3>
+                        <p class="text-right text-xl font-bold text-charger-blue mt-4">۸۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Waffles & Desserts Section -->
+        <section class="mb-12">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-6 p-4 rounded-3xl backdrop-filter-blur text-charger-blue">وافل و دسرهای گرم</h2>
+            <div class="grid responsive-grid gap-6">
+                <div class="rounded-3xl overflow-hidden shadow-lg border-2 item-card-blue border-charger-blue transform transition-transform hover:scale-105">
+                    <div class="p-5">
+                        <h3 class="text-2xl font-bold text-gray-800">وافل</h3>
+                        <p class="text-right text-xl font-bold text-charger-pink mt-4">۱۵۰,۰۰۰ تومان</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer with contact information -->
+    <footer class="text-center p-6 sm:p-10 rounded-t-3xl mt-8 shadow-lg" style="background: linear-gradient(to top, #d1faff, #ffc7e6);">
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-8 mb-4">
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/charger_icecream?igsh=dmI1dnZyNjF0bmcw" target="_blank" class="flex items-center gap-2 text-gray-700 hover:text-charger-pink transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" x2="17.5" y1="6.5" y2="6.5"></line>
+                </svg>
+                <span class="text-lg">اینستاگرام ما: @charger_icecream</span>
+            </a>
+            <!-- Address -->
+            <div class="flex items-center gap-2 text-gray-700 text-center sm:text-right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">
+                    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path>
+                    <circle cx="12" cy="9" r="3"></circle>
+                </svg>
+                <span class="text-lg">آدرس: خیابان 15خرداد جنوبی،روبه روی پارک عارف</span>
+            </div>
+        </div>
+        <p class="text-gray-500 text-sm sm:text-lg">© 1404 کافه شارژر | همه حقوق محفوظ است.</p>
+    </footer>
+</body>
+</html>
